@@ -4,30 +4,34 @@ import styled from 'styled-components';
 import Logo from './logo';
 import Menu from './menu';
 
+const Nav = styled.nav`
+  display: flex;
+  padding: 0px 25px;
+  width: 100%;
+`;
+
 const Div = styled.div`
   display: flex;
   align-items: center;
-  width: 100%;
-  margin: 0px 10px;
+  margin: 0px 25px;
 `;
 
 const InnerDiv = styled.div`
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
-  width: 100%;
 `;
 
 export default function Header() {
   return (
-    <nav>
+    <Nav>
       <Div>
         <Logo />
-        <InnerDiv>
-          <Menu />
-          <Search />
-        </InnerDiv>
       </Div>
-    </nav>
+      <InnerDiv>
+        <Menu />
+        <Search />
+      </InnerDiv>
+    </Nav>
   );
 }

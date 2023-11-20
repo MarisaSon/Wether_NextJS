@@ -8,7 +8,12 @@ const Ul = styled.ul`
 `;
 
 const Li = styled.li`
-  padding: 45px;
+  padding: 25px;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 25px;
+  color: ${({ theme }) => theme.colors.grayBlue70};
 `;
 
 export default function Menu() {
@@ -16,10 +21,10 @@ export default function Menu() {
     <div>
       <Ul>
         <Link href="/map">
-          <Li>Карта</Li>
+          <Li>Map</Li>
         </Link>
         <Link href="/settings">
-          <Li>Настройки</Li>
+          <Li>Setting</Li>
         </Link>
       </Ul>
     </div>
