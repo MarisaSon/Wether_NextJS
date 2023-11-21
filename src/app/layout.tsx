@@ -4,7 +4,7 @@ import Header from '@/components/header';
 import type { ReactNode } from 'react';
 import Providers from './Providers';
 
-const inter = Inter({ subsets: ['latin'] });
+// const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'Weather',
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 export default function Layout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body>
         <Providers>
           <Header />
           {children}

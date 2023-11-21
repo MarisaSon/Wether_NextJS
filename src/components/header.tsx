@@ -6,8 +6,9 @@ import Menu from './menu';
 
 const Nav = styled.nav`
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 0px 25px;
-  width: 100%;
 `;
 
 const Div = styled.div`
@@ -27,9 +28,9 @@ export default function Header() {
     <Nav>
       <Div>
         <Logo />
+        <Menu />
       </Div>
       <InnerDiv>
-        <Menu />
         <Search />
       </InnerDiv>
     </Nav>

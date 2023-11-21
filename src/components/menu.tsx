@@ -5,10 +5,12 @@ import styled from 'styled-components';
 const Ul = styled.ul`
   display: flex;
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 `;
 
 const Li = styled.li`
-  padding: 25px;
+  margin-left: 25px;
   font-size: 13px;
   font-style: normal;
   font-weight: 700;
@@ -16,9 +18,13 @@ const Li = styled.li`
   color: ${({ theme }) => theme.colors.grayBlue70};
 `;
 
+const Div = styled.div`
+  margin-left: 50px;
+`;
+
 export default function Menu() {
   return (
-    <div>
+    <Div>
       <Ul>
         <Link href="/map">
           <Li>Map</Li>
@@ -26,7 +32,10 @@ export default function Menu() {
         <Link href="/settings">
           <Li>Setting</Li>
         </Link>
+        <Li>About</Li>
+        <Li>News</Li>
+        <Li>Contacts</Li>
       </Ul>
-    </div>
+    </Div>
   );
 }
