@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import styled from 'styled-components';
 
-const Title = styled.h1`
+const Title = styled.span`
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -11,10 +11,12 @@ const Title = styled.h1`
 
 export default function Logo() {
   return (
-    <div>
-      <Link href="/">
-        <Title>Weather</Title>
-      </Link>
-    </div>
+    
+      <Title>
+        <span>
+        <Link href="/">Weather </Link>
+        </span>
+      </Title>
+  
   );
 }

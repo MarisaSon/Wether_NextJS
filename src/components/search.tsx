@@ -3,7 +3,7 @@ import styled from 'styled-components';
 const Div = styled.div`
   display: flex;
   justify-content: space-between;
-  width: 430px;
+  width: 390px;
   height: 50px;
   padding: 15px 20px;
   align-items: center;
@@ -12,17 +12,16 @@ const Div = styled.div`
 
 const Input = styled.input`
   border-radius: 30px;
-  width: 390px;
-  padding: 8px;
+  width: 100%;
   background-color: white;
   border: none;
+  padding: 15px 45px 15px 60px;
   box-shadow: 0px 2px 5px 0px rgba(38, 51, 77, 0.03);
   color: ${({ theme }) => theme.colors.grayBlue80};
   font-size: 12px;
   font-style: normal;
   font-weight: 700;
   line-height: 20px;
-  text-align: center;
 `;
 
 const Svg = styled.svg`
@@ -32,7 +31,7 @@ const Svg = styled.svg`
 
 const RightSvg = styled.svg`
   position: absolute;
-  right: 50px;
+  right: 20px;
 `;
 
 export default function Search() {
@@ -53,14 +52,13 @@ export default function Search() {
         />
       </Svg>
 
-      <Input type="text" placeholder="search..." />
+      <Input type="text" placeholder="Search..." />
       <RightSvg
         xmlns="http://www.w3.org/2000/svg"
         width="31"
         height="30"
         viewBox="0 0 31 30"
         fill="none"
-        className='arrow'
       >
         <path
           fill-rule="evenodd"

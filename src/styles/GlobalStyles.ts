@@ -5,14 +5,13 @@ const GlobalStyles = createGlobalStyle`
    ${normalize}
 
    @font-face {
-  font-family: 'Roboto';
-  src: url('/fonts/Roboto') format('ttf')
+   font-family: 'Roboto';
+   src: url('/fonts/Roboto') format('ttf')
    }
 
    body {
     background-color: ${({ theme }) => theme.colors.grayBlue98};
     font-family: 'Roboto', sans-serif;
-    
    }
 
    a {
