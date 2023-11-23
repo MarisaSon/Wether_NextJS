@@ -5,7 +5,6 @@ const Div = styled.div`
   justify-content: space-between;
   width: 390px;
   height: 50px;
-  padding: 15px 20px;
   align-items: center;
   position: relative;
 `;
@@ -17,21 +16,25 @@ const Input = styled.input`
   border: none;
   padding: 15px 45px 15px 60px;
   box-shadow: 0px 2px 5px 0px rgba(38, 51, 77, 0.03);
-  color: ${({ theme }) => theme.colors.grayBlue80};
   font-size: 12px;
   font-style: normal;
   font-weight: 700;
   line-height: 20px;
+  &::placeholder {
+    color: ${({ theme }) => theme.colors.grayBlue80};
+  }
 `;
 
 const Svg = styled.svg`
   position: absolute;
-  left: 30px
+  left: 20px;
+  pointer-events: none;
 `;
 
 const RightSvg = styled.svg`
   position: absolute;
   right: 20px;
+  pointer-events: none;
 `;
 
 export default function Search() {

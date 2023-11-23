@@ -9,29 +9,15 @@ const Nav = styled.nav`
   column-gap: 50px;
   align-items: center;
   padding: 25px;
-  border-bottom: 1px solid black;
+  border-bottom: 2px solid #f5f6f7;
 `;
-
-// const Div = styled.div`
-//   display: flex;
-//   align-items: center;
-//   margin: 0px 25px;
-// `;
-
-// const InnerDiv = styled.div`
-//   display: flex;
-//   justify-content: space-between;
-//   align-items: center;
-// `;
 
 export default function Header() {
   return (
     <Nav>
-     
-        <Logo />
-        <Menu />
-      
+      <Logo />
       <Search />
+      <Menu />
     </Nav>
   );
 }
