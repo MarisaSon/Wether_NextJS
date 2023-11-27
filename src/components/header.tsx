@@ -1,10 +1,11 @@
 'use client';
+
 import Search from '@/components/search';
 import styled from 'styled-components';
-import Logo from './logo';
+import Logo from './ui/logo';
 import Menu from './menu';
 
-const Nav = styled.nav`
+const Root = styled.header`
   display: flex;
   column-gap: 50px;
   align-items: center;
@@ -14,10 +15,10 @@ const Nav = styled.nav`
 
 export default function Header() {
   return (
-    <Nav>
-      <Logo />
+    <Root>
+      <Logo href="/" />
       <Search />
       <Menu />
-    </Nav>
+    </Root>
   );
 }

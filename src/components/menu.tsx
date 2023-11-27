@@ -1,4 +1,5 @@
 'use client';
+
 import Link from 'next/link';
 import styled from 'styled-components';
 
@@ -6,7 +7,7 @@ const Root = styled.ul`
   display: flex;
   margin: 0;
   padding: 0;
-  column-gap:25px;
+  column-gap: 25px;
 `;
 
 const Li = styled.li`
@@ -18,8 +19,6 @@ const Li = styled.li`
   color: ${({ theme }) => theme.colors.grayBlue70};
   list-style-type: none;
 `;
-
-
 
 export default function Menu() {
   return (
