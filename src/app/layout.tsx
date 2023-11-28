@@ -4,6 +4,8 @@ import Header from '@/components/header';
 import type { ReactNode } from 'react';
 import Providers from './Providers';
 import Footer from '@/components/footer';
+import Main from '@/components/main';
+
 
 // const inter = Inter({ subsets: ['latin'] });
 
@@ -19,6 +21,7 @@ export default function Layout({ children }: { children: ReactNode }) {
         <Providers>
           <Header />
           {children}
+          <Main/>
           <Footer />
         </Providers>
       </body>

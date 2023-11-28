@@ -4,6 +4,7 @@ const theme = {
     grayBlue50: '#4D5E80',
     grayBlue70: '#7D8FB3',
     grayBlue80: '#ADB8CC',
+    lightTheme: '#ffffff',
   },
 };
 
