@@ -11,9 +11,7 @@ const GlobalStyles = createGlobalStyle`
 
     body {
     background-color: ${({ theme }) => theme.colors.grayBlue98};
-    font-family: 'Roboto', sans-serif;
-    /* height: 100%; */
-   
+    font-family: 'Roboto', sans-serif; 
    }
 
    a {

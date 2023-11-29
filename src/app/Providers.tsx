@@ -5,8 +5,7 @@ import { ThemeProvider } from 'styled-components';
 import theme from '@/styles/theme';
 import GlobalStyles from '@/styles/GlobalStyles';
 
-
-export default function Providers({ children }: { children: React.ReactNode }) {
+const Providers = ({ children }: { children: React.ReactNode }) => {
   return (
     <StyledComponentsRegistry>
       <ThemeProvider theme={theme}>
@@ -15,4 +14,6 @@ export default function Providers({ children }: { children: React.ReactNode }) {
       </ThemeProvider>
     </StyledComponentsRegistry>
   );
-}
+};
+
+export default Providers;

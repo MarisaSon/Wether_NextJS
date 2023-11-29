@@ -20,7 +20,7 @@ const Li = styled.li`
   list-style-type: none;
 `;
 
-export default function Menu() {
+const Menu = () => {
   return (
     <Root>
       <Li>
@@ -34,4 +34,6 @@ export default function Menu() {
       <Li>Contacts</Li>
     </Root>
   );
-}
+};
+
+export default Menu;

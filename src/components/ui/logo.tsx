@@ -44,7 +44,7 @@ const handleColor = (color: 'grayBlue' | 'lightTheme' | string | undefined) => {
     case 'lightTheme':
       return theme.colors.lightTheme;
     default:
-      return theme.colors.grayBlue50;
+      return theme.colors.grayBlue50; 
   }
 };
 

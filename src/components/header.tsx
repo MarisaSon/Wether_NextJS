@@ -13,7 +13,7 @@ const Root = styled.header`
   border-bottom: 2px solid #f5f6f7;
 `;
 
-export default function Header() {
+const Header = () => {
   return (
     <Root>
       <Logo href="/" />
@@ -21,4 +21,6 @@ export default function Header() {
       <Menu />
     </Root>
   );
-}
+};
+
+export default Header;

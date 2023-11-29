@@ -7,7 +7,10 @@ import styled from 'styled-components';
 const Root = styled.footer`
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
 `;
 
 const Div = styled.div`
@@ -24,7 +27,7 @@ const Footer = () => {
   return (
     <Root>
       <Div>
-        <Logo size="sm" color='lightTheme' />
+        <Logo size="sm" color="lightTheme" />
         <Select />
       </Div>
     </Root>

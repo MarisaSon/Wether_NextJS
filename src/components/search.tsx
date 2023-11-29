@@ -37,7 +37,7 @@ const RightSvg = styled.svg`
   pointer-events: none;
 `;
 
-export default function Search() {
+const Search = () => {
   return (
     <Root>
       <Svg
@@ -71,4 +71,6 @@ export default function Search() {
       </RightSvg>
     </Root>
   );
-}
+};
+
+export default Search;
