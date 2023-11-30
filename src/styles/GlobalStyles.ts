@@ -9,9 +9,16 @@ const GlobalStyles = createGlobalStyle`
    src: url('/fonts/Roboto') format('ttf')
    }
 
-    body {
+   html, body {
+   height: 100%; 
+   }
+
+   
+   body {
     background-color: ${({ theme }) => theme.colors.grayBlue98};
-    font-family: 'Roboto', sans-serif; 
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
    }
 
    a {

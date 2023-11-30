@@ -3,7 +3,7 @@ import Header from '@/components/header';
 import type { ReactNode } from 'react';
 import Providers from './Providers';
 import Footer from '@/components/footer';
-import Main from '@/components/main';
+import Content from '@/components/content';
 
 export const metadata: Metadata = {
   title: 'Weather',
@@ -16,8 +16,7 @@ export default function Layout({ children }: { children: ReactNode }) {
       <body>
         <Providers>
           <Header />
-          {children}
-          <Main />
+          <Content>{children}</Content>
           <Footer />
         </Providers>
       </body>
